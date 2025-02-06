@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "title": "Proyecto 1",
+      "description": "Descripción del proyecto",
+      "image": "/images/project.svg",
+      "category": "Categoría",
+      "technologies": ["Tech1", "Tech2"],
+      "github": "https://github.com/...",
+      "demo": "https://demo.com/..."
+    },
+    {
+      "title": "Proyecto 2",
+      "description": "Descripción del proyecto",
+      "image": "/images/project.svg",
+      "category": "Categoría",
+      "technologies": ["Tech1", "Tech2"],
+      "github": "https://github.com/...",
+      "demo": "https://demo.com/..."
+    },
+    {
+      "title": "Proyecto 3",
+      "description": "Descripción del proyecto",
+      "image": "/images/project.svg",
+      "category": "Categoría",
+      "technologies": ["Tech1", "Tech2"],
+      "github": "https://github.com/...",
+      "demo": "https://demo.com/..."
+    },
+    {
+      "title": "Proyecto 1",
+      "description": "Descripción del proyecto",
+      "image": "/images/project.svg",
+      "category": "Categoría",
+      "technologies": ["Tech1", "Tech2"],
+      "github": "https://github.com/...",
+      "demo": "https://demo.com/..."
+    }
+  ]
+}

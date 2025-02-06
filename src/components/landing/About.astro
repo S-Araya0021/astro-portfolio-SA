@@ -1,0 +1,68 @@
+<section id="sobre-mi" class="bg-gray-900 h-screen pt-[72px] snap-start relative overflow-hidden">
+    <!-- Fondo decorativo -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-72 h-72 bg-purple-600 rounded-full filter blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-72 h-72 bg-blue-600 rounded-full filter blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-4 h-full flex flex-col justify-center relative">
+        <div class="max-w-7xl mx-auto">
+            <!-- Título con decoración -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                    Sobre Mi
+                </h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Imagen con efectos -->
+                <div class="w-full md:w-1/2 relative group">
+                    <div class="absolute inset-0 bg-purple-600 rounded-2xl rotate-6 transform group-hover:rotate-12 transition-transform duration-300"></div>
+                    <img 
+                        src="images/aboutme.svg" 
+                        alt="Ilustración sobre mí" 
+                        class="relative rounded-2xl shadow-xl w-full max-w-md mx-auto transform group-hover:scale-105 transition-transform duration-300"
+                    >
+                </div>
+
+                <!-- Texto con detalles -->
+                <div class="w-full md:w-1/2 space-y-6">
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Soy un Ingeniero en Informática apasionado por crear soluciones tecnológicas innovadoras. 
+                        Mi enfoque se centra en el desarrollo web full-stack, combinando diseño atractivo con 
+                        funcionalidad robusta.
+                    </p>
+
+                    <!-- Detalles adicionales -->
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="space-y-2">
+                            <h3 class="text-purple-400 font-semibold">Educación</h3>
+                            <p class="text-gray-300">Ingeniería en Informática</p>
+                            <p class="text-gray-400 text-sm">Universidad INACAP</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-purple-400 font-semibold">Experiencia</h3>
+                            <p class="text-gray-300">+2 años en desarrollo web</p>
+                            <p class="text-gray-400 text-sm">Proyectos Full Stack</p>
+                        </div>
+                    </div>
+
+                    <!-- Botón CTA -->
+                    <div class="pt-8">
+                        <a 
+                            href="#contacto" 
+                            class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors duration-300"
+                        >
+                            Trabajemos Juntos
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

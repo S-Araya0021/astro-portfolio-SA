@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Inicio",
+        "url": "#inicio"
+    },
+    {
+        "title": "Proyectos",
+        "url": "#proyectos"
+    },
+    {
+        "title": "Habilidades",
+        "url": "#habilidades"
+    },
+    {
+        "title": "Sobre Mí",
+        "url": "#sobre-mi"
+    },
+    {
+        "title": "Contacto",
+        "url": "#contacto"
+    }
+]

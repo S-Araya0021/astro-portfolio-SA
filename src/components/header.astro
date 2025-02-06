@@ -1,0 +1,96 @@
+---
+import headertitles from '../config/headertitle.json';
+---
+
+{/* Espaciador para compensar el header fijo */}
+<div class="h-16"></div>
+
+<header class="bg-gray-900/80 backdrop-blur-md text-white fixed w-full top-0 z-50 border-b border-purple-900/20">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+        <a href="#" class="text-xl font-bold flex items-center space-x-3 group">
+            <img src="favicon.svg" alt="Logo" class="w-10 h-10 rounded-lg group-hover:scale-105 transition-transform duration-300">
+            <span class="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">Portfolio Web</span>
+        </a>
+
+        <!-- Navegación Desktop -->
+        <nav class="hidden md:flex items-center space-x-8">
+            {
+                headertitles.map((headertitle) => (
+                    <a 
+                        href={headertitle.url} 
+                        class="relative text-gray-300 hover:text-white transition-colors duration-300 py-2 group"
+                    >
+                        <span>{headertitle.title}</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                ))
+            }
+        </nav>
+
+        <!-- Botón Menú Móvil -->
+        <button 
+            class="block md:hidden text-2xl focus:outline-none group" 
+            id="menu-btn" 
+            aria-label="Menu"
+        >
+            <div class="w-6 h-5 flex flex-col justify-between">
+                <span class="w-full h-0.5 bg-white transform transition-all duration-300 group-hover:bg-purple-400"></span>
+                <span class="w-full h-0.5 bg-white transform transition-all duration-300 group-hover:bg-purple-400"></span>
+                <span class="w-full h-0.5 bg-white transform transition-all duration-300 group-hover:bg-purple-400"></span>
+            </div>
+        </button>
+
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-gray-900/95 backdrop-blur-sm md:hidden">
+            <div class="h-full flex flex-col items-center justify-center space-y-8">
+                {
+                    headertitles.map((headertitle) => (
+                        <a 
+                            href={headertitle.url} 
+                            class="text-2xl text-gray-300 hover:text-white hover:scale-110 transition-all duration-300"
+                        >
+                            {headertitle.title}
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('hidden');
+        document.body.classList.toggle('overflow-hidden');
+    });
+
+    // Cerrar menú al hacer click en un enlace
+    const mobileLinks = mobileMenu?.querySelectorAll('a');
+    mobileLinks?.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        });
+    });
+</script>
+
+<style>
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-slideDown {
+        animation: slideDown 0.3s ease-out forwards;
+    }
+</style>
+
