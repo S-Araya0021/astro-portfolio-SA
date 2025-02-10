@@ -3,7 +3,7 @@
     {
       "title": "Proyecto 1",
       "description": "Descripción del proyecto",
-      "image": "/public/images/project.svg",
+      "image": "./images/project.svg",
       "category": "Categoría",
       "technologies": ["Tech1", "Tech2"],
       "github": "https://github.com/...",
@@ -12,7 +12,7 @@
     {
       "title": "Proyecto 2",
       "description": "Descripción del proyecto",
-      "image": "/public/images/project.svg",
+      "image": "./images/project.svg",
       "category": "Categoría",
       "technologies": ["Tech1", "Tech2"],
       "github": "https://github.com/...",
@@ -21,7 +21,7 @@
     {
       "title": "Proyecto 3",
       "description": "Descripción del proyecto",
-      "image": "/public/images/project.svg",
+      "image": "./images/project.svg",
       "category": "Categoría",
       "technologies": ["Tech1", "Tech2"],
       "github": "https://github.com/...",
@@ -30,7 +30,7 @@
     {
       "title": "Proyecto 4",
       "description": "Descripción del proyecto",
-      "image": "/public/images/project.svg",
+      "image": "./images/project.svg",
       "category": "Categoría",
       "technologies": ["Tech1", "Tech2"],
       "github": "https://github.com/...",
