@@ -11,11 +11,11 @@ import 'swiper/css/navigation';
       Proyectos
     </h2>
     
-    <div class="swiper-container">
+    <div class="swiper-container relative">
       <div class="swiper-wrapper">
         {Projects.projects.map((project) => (
-          <div class="swiper-slide">
-            <article class="bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+          <div class="swiper-slide p-2">
+            <article class="bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 h-full">
               <div class="relative">
                 <img 
                   src={project.image}
@@ -65,6 +65,8 @@ import 'swiper/css/navigation';
         ))}
       </div>
       
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>
@@ -78,30 +80,44 @@ import 'swiper/css/navigation';
   const swiper = new Swiper('.swiper-container', {
     modules: [Navigation],
     slidesPerView: 1,
-    spaceBetween: 32,
+    spaceBetween: 20,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
       768: {
         slidesPerView: 2,
+        spaceBetween: 30,
       },
       1024: {
         slidesPerView: 3,
+        spaceBetween: 30,
       },
     },
   });
 </script>
 
 <style>
+  .swiper-container {
+    padding: 0 40px;
+  }
+  
   .swiper-button-next,
   .swiper-button-prev {
     color: #fff;
+    background-color: rgba(107, 33, 168, 0.5);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
   }
   
   .swiper-button-next:after,
   .swiper-button-prev:after {
-    font-size: 24px;
+    font-size: 18px;
   }
 </style> 
